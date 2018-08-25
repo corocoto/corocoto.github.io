@@ -1,5 +1,5 @@
 #Ignore files and folders in "education" folder
-education/.idea/
-education/app/
-education/node_modules/
-education/package-lock.json
+education_site/.idea/
+education_site/app/
+education_site/node_modules/
+education_site/package-lock.json
