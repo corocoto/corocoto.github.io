@@ -1,0 +1,16 @@
+{
+  "name": "education_project",
+  "version": "1.0.0",
+  "description": "project wrtitten on bootstrap + sass(sccs) + jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CreativeRusBear",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0"
+  }
+}
