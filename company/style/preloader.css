@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: center;
 }
+.done{
+    z-index: 0;
+}
 .wrapper {
     position: relative;
     width: 300px;
