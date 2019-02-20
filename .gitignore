@@ -4,3 +4,6 @@ education/app/
 education/node_modules/
 education/package-lock.json
 company/.idea/
+voyage/.idea/
+voyage/src/video/
+voyage/src/img/
