@@ -4,6 +4,7 @@
 /*variables*/
 $font: 'Poiret One', "Century Gothic", Arial, sans-serif;
 $shadow_of_block: rgba(0,0,0,0.3);
+$num: 0;
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,6 +24,7 @@ header{
   }
 }
 .logo{
+  z-index: 2;
   position: absolute;
   top: 40px;
   left: 20px;
@@ -51,11 +53,17 @@ header{
   left: 0;
   background: $shadow_of_block;
 }
-.slide-2{
-  display: none;
+.slide{
+  visibility: hidden;
   opacity: 0;
+  //transition: opacity 10s ease-in-out;
   //display: block;
   //opacity+=.1
+}
+.active{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 10s ease-in-out;
 }
 
 .description{
@@ -72,6 +80,9 @@ header{
     margin-bottom: 50px;
   }
 }
+
+
+
 
 
 

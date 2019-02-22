@@ -23,6 +23,7 @@ header .container {
 }
 
 .logo {
+  z-index: 2;
   position: absolute;
   top: 40px;
   left: 20px;
@@ -53,9 +54,15 @@ header .container {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.slide-2 {
-  display: none;
+.slide {
+  visibility: hidden;
   opacity: 0;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 10s ease-in-out;
 }
 
 .description {

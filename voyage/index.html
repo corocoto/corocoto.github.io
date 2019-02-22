@@ -11,10 +11,12 @@
 <body>
 <header>
     <div class="container">
+        <div class="logo">
+            <img src="src/img/logo/logo.png" alt="">
+        </div>
+
+        <div class="slide active">
             <div class="overlay">
-                <div class="logo">
-                    <img src="src/img/logo/logo.png" alt="">
-                </div>
                 <div class="description">
                     <h1>Сервис по организации <br>путешествий "Вояж"</h1>
                 </div>
@@ -22,9 +24,17 @@
             <video autoplay loop muted class="video slide-1">
                 <source type="video/mp4" src="src/video/716209402.mp4">
             </video>
-        <video autoplay loop muted class="video slide-2">
-            <source type="video/mp4" src="src/video/Arc de Triomphe in Paris.mp4">
-        </video>
+        </div>
+        <div class="slide">
+            <div class="overlay">
+                <div class="description">
+                    <h1>ABC<br>путешествий "Вояж"</h1>
+                </div>
+            </div>
+            <video autoplay loop muted class="video slide-2">
+                <source type="video/mp4" src="src/video/Arc de Triomphe in Paris.mp4">
+            </video>
+        </div>
     </div>
 </header>
 <section>
@@ -32,5 +42,6 @@
         <h1>text</h1>
     </div>
 </section>
+<script src="src/js/video.js"></script>
 </body>
 </html>
