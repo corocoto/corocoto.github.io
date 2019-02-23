@@ -9,25 +9,28 @@ $num: 0;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color:#fff;
 }
 body{
   font-family: $font;
 }
 header{
   height: 100vh;
+  color: #fff;
   .container {
-    overflow: hidden;
-    z-index: -1;
+    //overflow: hidden;
+    overflow: inherit;
+    //z-index: -1;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+
   }
 }
-.logo{
+.logo,.content{
   z-index: 2;
-  position: absolute;
-  top: 40px;
-  left: 20px;
+  position: relative;
   img{
     width: 12%;
   }
@@ -57,8 +60,6 @@ header{
   visibility: hidden;
   opacity: 0;
   //transition: opacity 10s ease-in-out;
-  //display: block;
-  //opacity+=.1
 }
 .active{
   visibility: visible;
@@ -80,10 +81,3 @@ header{
     margin-bottom: 50px;
   }
 }
-
-
-
-
-
-
-

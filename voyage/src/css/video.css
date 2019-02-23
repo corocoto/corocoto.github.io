@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #fff;
 }
 
 body {
@@ -14,21 +13,22 @@ body {
 
 header {
   height: 100vh;
+  color: #fff;
 }
 header .container {
-  overflow: hidden;
-  z-index: -1;
+  overflow: inherit;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
 }
 
-.logo {
+.logo, .content {
   z-index: 2;
-  position: absolute;
-  top: 40px;
-  left: 20px;
+  position: relative;
 }
-.logo img {
+.logo img, .content img {
   width: 12%;
 }
 
