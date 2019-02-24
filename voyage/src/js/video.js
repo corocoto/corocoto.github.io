@@ -22,9 +22,6 @@ window.onload=function () {
 
 function switchSlides(firstSlide, secondSlide, firstAngle, secondAngle) {
   addRemoveClasses(firstSlide,secondSlide, 'active');
-  secondSlide.style.visibility='visible';
-  setTimeout(()=> firstSlide.style.visibility='hidden',4000);
-
   addRemoveClasses(firstAngle, secondAngle, 'disable_angle')
 }
 
