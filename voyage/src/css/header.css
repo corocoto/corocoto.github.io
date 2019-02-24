@@ -9,7 +9,6 @@
 
 body {
   font-family: "Poiret One", "Old Standard TT", "Century Gothic", Arial, sans-serif;
-  height: 2000px;
 }
 
 header {
@@ -25,15 +24,17 @@ header .container {
   padding: 40px 20px;
 }
 
-.logo, .content {
+.logo {
+  position: fixed;
   z-index: 2;
-  position: relative;
 }
-.logo img, .content img {
+.logo img {
   width: 12%;
 }
 
 .content {
+  z-index: 2;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

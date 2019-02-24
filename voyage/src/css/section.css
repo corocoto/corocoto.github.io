@@ -1,3 +1,54 @@
-
+section {
+  background: #edece9;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+section .container a {
+  color: #1f1e1e;
+  font-size: 50px;
+  font-weight: normal;
+  cursor: default;
+  text-decoration: none;
+  text-align: center;
+  line-height: 140px;
+}
+section .line {
+  margin: auto;
+  border: 1px solid #1f1e1e;
+  width: 20vh;
+}
+section .gallery {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+section .block {
+  width: 34vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+section .block h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+section .block p {
+  font-size: 19px;
+}
+section img {
+  width: 35vw;
+  transition: 2.5s ease-out;
+}
+section img:hover {
+  transform: scale(1.09, 1.09);
+  box-shadow: 21px 17px 32px -1px rgba(0, 0, 0, 0.75);
+}
 
 /*# sourceMappingURL=section.css.map */

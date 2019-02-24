@@ -1,6 +1,64 @@
-//section{
-//  position: absolute;
-//  height: 500px;
-//  width: 500px;
-//  background: #ccc;
-//}
+@mixin forLinks($color,$size, $weight, $cursor){
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  cursor: $cursor;
+  text-decoration: none;
+  text-align: center;
+}
+
+section{
+  background: #edece9;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  .container {
+    a {
+      @include forLinks(#1f1e1e, 50px, normal, default);
+      line-height: 140px;
+    }
+  }
+    .line{
+      margin: auto;
+      border: 1px solid #1f1e1e;
+      width: 20vh;
+    }
+    .gallery{
+      margin: {
+        top:110px;
+      };
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .block{
+      width: 34vw;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 40px;
+      h4{
+        padding: {
+          top: 20px;
+          bottom: 10px;};
+        font-size: 40px;
+      }
+      p{
+        font-size: 19px;
+      }
+    }
+    img{
+      width: 35vw;
+      transition: 2.5s ease-out;
+      &:hover{
+        transform: scale(1.09,1.09);
+        box-shadow: 21px 17px 32px -1px rgba(0,0,0,0.75);
+      }
+    }
+  }
+
+
+
