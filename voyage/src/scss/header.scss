@@ -75,16 +75,20 @@ header{
   //background: $shadow_of_block;
 }
 .slide{
-  visibility: hidden;
+  //visibility: hidden;
   opacity: 0;
-  //transition: opacity 10s ease-in-out;
+  transition: opacity 4s ease-in-out;
 }
 .active{
   visibility: visible;
   opacity: 1;
-  transition: opacity 10s ease-in-out;
+  transition: opacity 4s ease-in-out;
 }
-
+.disable_angle{
+  color: #ccc;
+  cursor: default;
+  pointer-events: none;
+}
 .description{
   width: 60%;
   height: 60%;
