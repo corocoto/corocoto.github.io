@@ -6,11 +6,22 @@
   text-decoration: none;
   text-align: center;
 }
-
 section{
   background: #edece9;
-  padding-top: 10vh;
   display: flex;
+  color: #1f1e1e;
+  h4{
+    padding: {
+      top: 20px;
+      bottom: 10px;};
+    font-size: 40px;
+  }
+  p{
+    font-size: 19px;
+  }
+}
+section.guide{
+  padding-top: 10vh;
   justify-content: center;
   .container {
     a {
@@ -40,15 +51,6 @@ section{
       flex-wrap: wrap;
       align-items: center;
       margin-bottom: 40px;
-      h4{
-        padding: {
-          top: 20px;
-          bottom: 10px;};
-        font-size: 40px;
-      }
-      p{
-        font-size: 19px;
-      }
     }
     img{
       width: 35vw;
@@ -59,6 +61,29 @@ section{
       }
     }
   }
+
+section.poster{
+  justify-content: flex-end;
+  padding-top: 25vh;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    h4{
+      font-size: 80px;
+    }
+    .info_text{
+      position: relative;
+      left: 10.2vw;
+    }
+    p{
+      font-size: 25px;
+    }
+    img {
+      width: 70vw;
+    }
+  }
+}
 
 
 

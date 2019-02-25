@@ -1,10 +1,22 @@
 section {
   background: #edece9;
-  padding-top: 10vh;
   display: flex;
+  color: #1f1e1e;
+}
+section h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 40px;
+}
+section p {
+  font-size: 19px;
+}
+
+section.guide {
+  padding-top: 10vh;
   justify-content: center;
 }
-section .container a {
+section.guide .container a {
   color: #1f1e1e;
   font-size: 50px;
   font-weight: normal;
@@ -13,18 +25,18 @@ section .container a {
   text-align: center;
   line-height: 140px;
 }
-section .line {
+section.guide .line {
   margin: auto;
   border: 1px solid #1f1e1e;
   width: 20vh;
 }
-section .gallery {
+section.guide .gallery {
   margin-top: 110px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-section .block {
+section.guide .block {
   width: 34vw;
   text-align: center;
   display: flex;
@@ -34,21 +46,36 @@ section .block {
   align-items: center;
   margin-bottom: 40px;
 }
-section .block h4 {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  font-size: 40px;
-}
-section .block p {
-  font-size: 19px;
-}
-section img {
+section.guide img {
   width: 35vw;
   transition: 2.5s ease-out;
 }
-section img:hover {
+section.guide img:hover {
   transform: scale(1.09, 1.09);
   box-shadow: 21px 17px 32px -1px rgba(0, 0, 0, 0.75);
+}
+
+section.poster {
+  justify-content: flex-end;
+  padding-top: 25vh;
+}
+section.poster .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+section.poster .container h4 {
+  font-size: 80px;
+}
+section.poster .container .info_text {
+  position: relative;
+  left: 10.2vw;
+}
+section.poster .container p {
+  font-size: 25px;
+}
+section.poster .container img {
+  width: 70vw;
 }
 
 /*# sourceMappingURL=section.css.map */
