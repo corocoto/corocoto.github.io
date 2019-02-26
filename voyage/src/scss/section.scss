@@ -25,21 +25,21 @@ section{
   p{
     font-size: 19px;
   }
-}
-section.guide{
-  padding-top: 10vh;
-  justify-content: center;
   .container {
     a {
       @include forLinks($dark_color, 50px, normal, default);
       line-height: 140px;
     }
   }
-    .line{
-      margin: auto;
-      border: 1px solid $dark_color;
-      width: 20vh;
-    }
+  .line{
+    margin: auto;
+    border: 1px solid $dark_color;
+    width: 20vh;
+  }
+}
+section.guide{
+  padding-top: 10vh;
+  justify-content: center;
     .gallery{
       margin: {
         top:110px;
@@ -141,5 +141,28 @@ section.img_album{
   }
 }
 
+section.photo_album{
+  
+}
 
+
+section.about_us{
+  justify-content: center;
+  padding: 3vh 0;
+  position: relative;
+  .line{
+    width: 12%;
+  }
+  .container{
+    width: 60vw;
+  }
+  .history{
+    padding: 7vh 0;
+    text-align: center;
+  }
+  p{
+    font-size: 21px;
+    padding-bottom: 2vh;
+  }
+}
 

@@ -11,12 +11,7 @@ section h4 {
 section p {
   font-size: 19px;
 }
-
-section.guide {
-  padding-top: 10vh;
-  justify-content: center;
-}
-section.guide .container a {
+section .container a {
   color: #1f1e1e;
   font-size: 50px;
   font-weight: normal;
@@ -25,10 +20,15 @@ section.guide .container a {
   text-align: center;
   line-height: 140px;
 }
-section.guide .line {
+section .line {
   margin: auto;
   border: 1px solid #1f1e1e;
   width: 20vh;
+}
+
+section.guide {
+  padding-top: 10vh;
+  justify-content: center;
 }
 section.guide .gallery {
   margin-top: 110px;
@@ -124,6 +124,26 @@ section.img_album h4 {
 }
 section.img_album p {
   font-size: 30px;
+}
+
+section.about_us {
+  justify-content: center;
+  padding: 3vh 0;
+  position: relative;
+}
+section.about_us .line {
+  width: 12%;
+}
+section.about_us .container {
+  width: 60vw;
+}
+section.about_us .history {
+  padding: 7vh 0;
+  text-align: center;
+}
+section.about_us p {
+  font-size: 21px;
+  padding-bottom: 2vh;
 }
 
 /*# sourceMappingURL=section.css.map */
