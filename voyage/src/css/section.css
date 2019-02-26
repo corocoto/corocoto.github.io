@@ -57,7 +57,7 @@ section.guide img:hover {
 
 section.poster {
   justify-content: flex-end;
-  padding-top: 25vh;
+  padding: 20vh 0;
 }
 section.poster .container {
   display: flex;
@@ -76,6 +76,54 @@ section.poster .container p {
 }
 section.poster .container img {
   width: 70vw;
+}
+
+section.img_album {
+  padding: 20vh 0;
+  display: block;
+}
+section.img_album .container {
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+section.img_album .left_part {
+  position: relative;
+}
+section.img_album .right_part {
+  position: relative;
+  left: -5vw;
+}
+section.img_album .img_desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6vh 5vw;
+  border-bottom: 1px solid #d3d1d0;
+}
+section.img_album .img_desc:hover img {
+  z-index: 1;
+  display: block;
+  box-shadow: 21px 17px 32px -1px rgba(0, 0, 0, 0.75);
+}
+section.img_album .img_desc:hover p {
+  display: none;
+}
+section.img_album .img_desc:hover .right_part {
+  z-index: 2;
+  color: lightslategrey;
+}
+section.img_album img {
+  position: absolute;
+  top: -20vh;
+  display: none;
+  width: 45vw;
+}
+section.img_album h4 {
+  font-size: 90px;
+}
+section.img_album p {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=section.css.map */

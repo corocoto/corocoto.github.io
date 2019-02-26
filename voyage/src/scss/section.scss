@@ -6,10 +6,16 @@
   text-decoration: none;
   text-align: center;
 }
+
+$hover_color: #928b87;
+$bg: #edece9;
+$dark_color:#1f1e1e;
+$line : #d3d1d0;
+
 section{
-  background: #edece9;
+  background: $bg;
   display: flex;
-  color: #1f1e1e;
+  color: $dark_color;
   h4{
     padding: {
       top: 20px;
@@ -25,13 +31,13 @@ section.guide{
   justify-content: center;
   .container {
     a {
-      @include forLinks(#1f1e1e, 50px, normal, default);
+      @include forLinks($dark_color, 50px, normal, default);
       line-height: 140px;
     }
   }
     .line{
       margin: auto;
-      border: 1px solid #1f1e1e;
+      border: 1px solid $dark_color;
       width: 20vh;
     }
     .gallery{
@@ -64,7 +70,7 @@ section.guide{
 
 section.poster{
   justify-content: flex-end;
-  padding-top: 25vh;
+  padding: 20vh 0;
   .container {
     display: flex;
     align-items: center;
@@ -82,6 +88,56 @@ section.poster{
     img {
       width: 70vw;
     }
+  }
+}
+
+section.img_album{
+  padding: 20vh 0;
+  display: block;
+  .container{
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .left_part{
+    position: relative;
+  }
+  .right_part{
+    position: relative;
+    left: -5vw;
+  }
+  .img_desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vh 5vw;
+    border-bottom: 1px solid $line;
+    &:hover{
+      img{
+        z-index: 1;
+        display: block;
+        box-shadow: 21px 17px 32px -1px rgba(0,0,0,0.75);
+      }
+      p{
+        display: none;
+      }
+      .right_part{
+        z-index: 2;
+        color: lightslategrey;
+      }
+    }
+  }
+  img{
+    position: absolute;
+    top: -20vh;
+    display: none;
+    width: 45vw;
+  }
+  h4{
+    font-size: 90px;
+  }
+  p{
+    font-size: 30px;
   }
 }
 
