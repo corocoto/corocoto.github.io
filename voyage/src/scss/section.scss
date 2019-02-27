@@ -7,7 +7,7 @@
   text-align: center;
 }
 
-$hover_color: #928b87;
+$hover_color: lightslategrey;
 $bg: #edece9;
 $dark_color:#1f1e1e;
 $line : #d3d1d0;
@@ -121,7 +121,7 @@ section.img_album{
       }
       .right_part{
         z-index: 2;
-        color: lightslategrey;
+        color: $hover_color;
       }
     }
   }
@@ -166,7 +166,7 @@ section.about_us{
     width: 60vw;
   }
   .history{
-    padding: 7vh 0;
+    padding: 5vh 0;
     text-align: center;
   }
   p{

@@ -1,0 +1,39 @@
+@mixin forLinks($color,$size, $weight, $cursor){
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  cursor: $cursor;
+  text-decoration: none;
+  text-align: center;
+}
+
+$bg: #1f1e1e;
+$color: #edece9;;
+
+footer{
+  padding: 8vh 0;
+  text-align: center;
+  background: $bg;
+  color: $color;
+  i{
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  h4{
+    text-align: center;
+    font-size: 50px;
+  }
+  .contacts{
+    margin:7vh 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  a{
+    @include forLinks($color, 20px, normal, pointer);
+    transition: color .3s ease-in;
+    &:hover{
+      color: #d3d1d0;
+    }
+  }
+}

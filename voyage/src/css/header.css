@@ -11,6 +11,10 @@ body {
   font-family: "Poiret One", "Old Standard TT", "Century Gothic", Arial, sans-serif;
 }
 
+i {
+  font-size: 40px;
+}
+
 header {
   height: 100vh;
   color: #fff;
@@ -41,7 +45,6 @@ header .container {
   justify-content: space-between;
 }
 .content i {
-  font-size: 40px;
   cursor: pointer;
   transition: color .3s ease-in;
 }

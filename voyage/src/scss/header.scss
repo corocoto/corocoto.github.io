@@ -13,13 +13,14 @@ $num: 0;
 body{
   font-family: $font;
 }
+i {
+  font-size: 40px;
+}
 header{
   height: 100vh;
   color: #fff;
   .container {
-    //overflow: hidden;
     overflow: inherit;
-    //z-index: -1;
     height: 100%;
     width: 100%;
     display: flex;
@@ -43,8 +44,6 @@ header{
   align-items: center;
   justify-content: space-between;
   i{
-    font-size: 40px;
-    //display: block;
     cursor: pointer;
     transition: color .3s ease-in;
     &:hover{
