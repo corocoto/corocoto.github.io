@@ -26,7 +26,7 @@ section{
     font-size: 19px;
   }
   .container {
-    a {
+    a,#places{
       @include forLinks($dark_color, 50px, normal, default);
       line-height: 140px;
     }
@@ -37,7 +37,7 @@ section{
     width: 20vh;
   }
 }
-section.guide{
+section.guide, section.interesting_places{
   padding-top: 10vh;
   justify-content: center;
     .gallery{
@@ -67,7 +67,6 @@ section.guide{
       }
     }
   }
-
 section.poster{
   justify-content: flex-end;
   padding: 20vh 0;
@@ -90,7 +89,6 @@ section.poster{
     }
   }
 }
-
 section.img_album{
   padding: 20vh 0;
   display: block;
@@ -140,15 +138,26 @@ section.img_album{
     font-size: 30px;
   }
 }
-
-section.photo_album{
-  
+section.interesting_places{
+ h4{
+   text-align: center;
+ }
+  p{
+    font-size: 25px;
+  }
+  .block{
+    overflow: hidden;
+  }
+  img{
+    &:hover{
+      transform: scale(1.06);
+      box-shadow: none;
+    }
+  }
 }
-
-
 section.about_us{
   justify-content: center;
-  padding: 3vh 0;
+  padding: 15vh 0;
   position: relative;
   .line{
     width: 12%;
@@ -165,4 +174,3 @@ section.about_us{
     padding-bottom: 2vh;
   }
 }
-

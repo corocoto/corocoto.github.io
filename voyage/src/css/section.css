@@ -11,7 +11,7 @@ section h4 {
 section p {
   font-size: 19px;
 }
-section .container a {
+section .container a, section .container #places {
   color: #1f1e1e;
   font-size: 50px;
   font-weight: normal;
@@ -26,17 +26,17 @@ section .line {
   width: 20vh;
 }
 
-section.guide {
+section.guide, section.interesting_places {
   padding-top: 10vh;
   justify-content: center;
 }
-section.guide .gallery {
+section.guide .gallery, section.interesting_places .gallery {
   margin-top: 110px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-section.guide .block {
+section.guide .block, section.interesting_places .block {
   width: 34vw;
   text-align: center;
   display: flex;
@@ -46,11 +46,11 @@ section.guide .block {
   align-items: center;
   margin-bottom: 40px;
 }
-section.guide img {
+section.guide img, section.interesting_places img {
   width: 35vw;
   transition: 2.5s ease-out;
 }
-section.guide img:hover {
+section.guide img:hover, section.interesting_places img:hover {
   transform: scale(1.09, 1.09);
   box-shadow: 21px 17px 32px -1px rgba(0, 0, 0, 0.75);
 }
@@ -126,9 +126,23 @@ section.img_album p {
   font-size: 30px;
 }
 
+section.interesting_places h4 {
+  text-align: center;
+}
+section.interesting_places p {
+  font-size: 25px;
+}
+section.interesting_places .block {
+  overflow: hidden;
+}
+section.interesting_places img:hover {
+  transform: scale(1.06);
+  box-shadow: none;
+}
+
 section.about_us {
   justify-content: center;
-  padding: 3vh 0;
+  padding: 15vh 0;
   position: relative;
 }
 section.about_us .line {
