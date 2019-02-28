@@ -11,7 +11,9 @@ $hover_color: lightslategrey;
 $bg: #edece9;
 $dark_color:#1f1e1e;
 $line : #d3d1d0;
-
+body{
+  //background: $bg;
+}
 section{
   background: $bg;
   display: flex;
@@ -68,6 +70,7 @@ section.guide, section.interesting_places{
     }
   }
 section.poster{
+  margin: 0;
   justify-content: flex-end;
   padding: 20vh 0;
   .container {
@@ -90,6 +93,7 @@ section.poster{
   }
 }
 section.img_album{
+  margin: 0;
   padding: 20vh 0;
   display: block;
   .container{
