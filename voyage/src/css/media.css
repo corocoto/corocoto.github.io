@@ -21,6 +21,73 @@
     font-size: 35px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  .content a {
+    font-size: 30px;
+  }
+
+  section h4 {
+    font-size: 55px;
+  }
+  section p {
+    font-size: 28px;
+  }
+
+  section.poster .container h4 {
+    font-size: 100px;
+  }
+  section.poster .container p {
+    font-size: 40px;
+  }
+
+  section.img_album h4 {
+    font-size: 100px;
+  }
+  section.img_album p {
+    font-size: 40px;
+  }
+
+  section.guide .gallery, section.interesting_places .gallery {
+    margin-top: 170px;
+  }
+
+  section.interesting_places {
+    padding-top: 0;
+  }
+  section.interesting_places .container > h4 {
+    font-size: 80px;
+    line-height: 160px;
+  }
+  section.interesting_places .block h4 {
+    font-size: 50px;
+  }
+  section.interesting_places .block p {
+    font-size: 35px;
+  }
+
+  section .container a, section .container #places {
+    font-size: 70px;
+    line-height: 180px;
+  }
+
+  section.about_us p {
+    font-size: 40px;
+  }
+
+  footer h4 {
+    font-size: 70px;
+  }
+  footer i {
+    font-size: 70px;
+  }
+  footer h5 {
+    font-size: 28px;
+  }
+  footer a {
+    font-size: 35px;
+  }
+}
+/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1152px) {
   .logo img {
     width: 10%;
@@ -30,7 +97,6 @@
     font-size: 60px;
   }
 }
-/* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .logo img {
@@ -88,6 +154,11 @@
   }
   section.img_album p {
     font-size: 25px;
+  }
+
+  section.about_us a {
+    font-size: 40px;
+    line-height: 110px;
   }
 
   footer .contacts {
@@ -236,13 +307,50 @@
   section.img_album img {
     width: 50vw;
   }
+
+  section.about_us {
+    padding-top: 0;
+  }
+  section.about_us p {
+    font-size: 14px;
+  }
+
+  section.guide .block, section.interesting_places .block {
+    width: 75vw;
+  }
 }
-/* Custom, iPhone Retina */
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+@media only screen and (max-width: 370px) {
+  section.poster .container .info_text {
+    left: 8.7vw;
+  }
+  section.poster .container .info_text h4 {
+    font-size: 25px;
+  }
+  section.poster .container .info_text p {
+    font-size: 12px;
+  }
+
+  section.img_album h4 {
+    font-size: 20px;
+  }
+  section.img_album p {
+    font-size: 10px;
+  }
+
+  footer h4 {
+    font-size: 20px;
+  }
+  footer a {
+    font-size: 15px;
+  }
+  footer h5 {
+    font-size: 8px;
+  }
+
+  section.about_us a {
+    font-size: 30px;
+    line-height: 90px;
+  }
+}
 
 /*# sourceMappingURL=media.css.map */
