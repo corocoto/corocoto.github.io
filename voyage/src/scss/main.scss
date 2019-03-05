@@ -1,0 +1,317 @@
+@import "utils/fonts";
+@import "utils/mixins";
+@import "utils/variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: $font;
+}
+i {
+  font-size: 40px;
+}
+
+
+
+//HEADER
+header{
+  height: 100vh;
+  color: $white;
+  .container {
+    overflow: inherit;
+    height: 100%;
+    width: 100%;
+    @include starterFlex(space-between, stretch);
+    padding: 40px 20px;
+  }
+}
+.logo{
+  position: fixed;
+  z-index: 2;
+  img{
+    width: 12%;
+  }
+}
+.content{
+  z-index: 2;
+  position: relative;
+  @include starterFlex(space-between, center);
+  flex-direction: column;
+  //align-items: center;
+  //justify-content: space-between;
+  i{
+    cursor: pointer;
+    transition: $transition_for_i;
+    &:hover{
+      color: $hover_header_i_color;
+    }
+  }
+  .current_number{
+    margin:{
+      top: 30px;
+      bottom: 30px;
+    };
+    text-align: center;
+    font-weight: bold;
+  }
+  a {
+    writing-mode: vertical-lr;
+    position: relative;
+    color: $white;
+    cursor: pointer;
+    text-decoration: none;
+    &:after {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 110%;
+      height: 0;
+      width: 2px;
+      background-color: $white ;
+      content: "";
+      transition: $transition_a_header;
+    }
+    &:hover:after,
+    &:focus:after {
+      height: 100%;
+    }
+  }
+}
+.overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  @include starterFlex(center, center);
+  box-shadow: $shadow_of_block;
+}
+.video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.slide{
+  opacity: 0;
+  transition: $transition_slides;
+}
+.active{
+  visibility: visible;
+  opacity: 1;
+  transition: $transition_slides;
+}
+.disable_angle{
+  color: $lite_grey;
+  cursor: default;
+  pointer-events: none;
+}
+.description{
+  width: 60%;
+  height: 60%;
+  border: 2px solid $white;
+  @include starterFlex(flex-start, center);
+  h1{
+    position: relative;
+    left: -14%;
+    font-size: 60px;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+//SECTION
+section{
+  background: $section_bg;
+  display: flex;
+  color: $dark_color;
+  h4{
+    padding: {
+      top: 20px;
+      bottom: 10px;};
+    font-size: 40px;
+  }
+  p{
+    font-size: 19px;
+  }
+  .container {
+    a,#places{
+      @include forLinks($dark_color, 50px, normal, default);
+      line-height: 140px;
+    }
+  }
+  .line{
+    margin: auto;
+    border: 1px solid $dark_color;
+    width: 20vh;
+  }
+}
+section.guide, section.interesting_places{
+  padding-top: 10vh;
+  justify-content: center;
+  .gallery{
+    margin: {
+      top:110px;
+    };
+    @include starterFlex(space-around, stretch);
+    flex-wrap: wrap;
+  }
+  .block{
+    width: 34vw;
+    text-align: center;
+    @include starterFlex(center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  img{
+    width: 35vw;
+    transition: 2.5s ease-out;
+    &:hover{
+      transform: scale(1.09,1.09);
+      box-shadow: 21px 17px 32px -1px rgba(0,0,0,0.75);
+    }
+  }
+}
+section.poster{
+  margin: 0;
+  justify-content: flex-end;
+  padding: 20vh 0;
+  .container {
+    @include starterFlex(flex-end, center);
+    h4{
+      font-size: 80px;
+    }
+    .info_text{
+      position: relative;
+      left: 10.2vw;
+    }
+    p{
+      font-size: 25px;
+    }
+    img {
+      width: 70vw;
+    }
+  }
+}
+section.img_album{
+  margin: 0;
+  padding: 20vh 0;
+  display: block;
+  .container{
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .left_part{
+    position: relative;
+  }
+  .right_part{
+    position: relative;
+    left: -5vw;
+  }
+  .img_desc{
+    @include starterFlex(space-between, center);
+    padding: 6vh 5vw;
+    border-bottom: 1px solid $line;
+    &:hover{
+      img{
+        z-index: 1;
+        display: block;
+        box-shadow: 21px 17px 32px -1px rgba(0,0,0,0.75);
+      }
+      p{
+        display: none;
+      }
+      .right_part{
+        z-index: 2;
+        color: $hover_color;
+      }
+    }
+  }
+  img{
+    position: absolute;
+    top: -20vh;
+    display: none;
+    width: 45vw;
+  }
+  h4{
+    font-size: 90px;
+  }
+  p{
+    font-size: 30px;
+  }
+}
+section.interesting_places{
+  h4{
+    text-align: center;
+  }
+  p{
+    font-size: 25px;
+  }
+  .block{
+    overflow: hidden;
+  }
+  img{
+    &:hover{
+      transform: scale(1.06);
+      box-shadow: none;
+    }
+  }
+}
+section.about_us{
+  justify-content: center;
+  padding: 15vh 0;
+  position: relative;
+  .line{
+    width: 12%;
+  }
+  .container{
+    width: 60vw;
+  }
+  .history{
+    padding: 5vh 0;
+    text-align: center;
+  }
+  p{
+    font-size: 21px;
+    padding-bottom: 2vh;
+  }
+}
+
+
+
+//FOOTER
+footer{
+  padding: 8vh 0;
+  text-align: center;
+  background: $dark_color;
+  color: $section_bg;
+  i{
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+  h4{
+    text-align: center;
+    font-size: 50px;
+  }
+  .contacts{
+    margin:7vh 0;
+    @include starterFlex(space-around, center);
+  }
+  a{
+    @include forLinks($section_bg, 20px, normal, pointer);
+    transition: color .3s ease-in;
+    &:hover{
+      color: #d3d1d0;
+    }
+  }
+}

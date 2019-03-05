@@ -1,0 +1,14 @@
+@mixin forLinks($color,$size, $weight, $cursor){
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  cursor: $cursor;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin starterFlex($jc, $ai){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
