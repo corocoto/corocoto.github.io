@@ -5,8 +5,5 @@ education/node_modules/
 education/package-lock.json
 company/.idea/
 voyage/.idea/
-voyage/src/video/678598981.mp4
-voyage/src/video/739124510.mp4
-voyage/src/video/Aerial Video Of Coastline.mp4
-voyage/src/video/Pexels Videos 1093662.mp4
-voyage/src/video/Timelapse of Stockholm at Night.mp4
+voyage/package-lock.json
+voyage/node_modules/
