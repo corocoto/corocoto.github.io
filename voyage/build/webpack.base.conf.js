@@ -71,8 +71,11 @@ module.exports={
                 interlaced: true,
                 progressive: true,
                 svgPlugins: [{removeViewBox: false}],
-                une: [pngquant()],
-            plugins: [mozjpeg({quality: 50})]
+                // une: [pngquant()],
+            plugins: [
+                mozjpeg({quality: 50}),
+                pngquant()
+            ]
         }),
     ]
 };
