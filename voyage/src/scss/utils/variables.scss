@@ -11,3 +11,22 @@ $hover_color          : lightslategrey;
 $section_bg           : #edece9;
 $dark_color           : #1f1e1e;
 $line                 : #d3d1d0;
+
+
+//for preloader
+// Fonts & Typography
+$letterDim: 40px;
+$letterSize: 2em;
+$letterEasing: ease-in;
+$letterSpeed: 8s;
+
+// Colors
+$palette: #14ffec, #0d7377, #323232, #212121;
+//$palette: #80d6ff, #edf798, #fab57a, #f06868;
+// Loader Settings
+$dim: 20rem;
+$fadeStart: .1;
+$fadeEnd: 1;
+$speed: 4s;
+$easing: ease-out;
+$type: normal;  //normal / reverse / alternate / alternate-reverse

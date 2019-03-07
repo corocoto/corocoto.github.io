@@ -1,7 +1,7 @@
 @import "utils/fonts";
 @import "utils/mixins";
 @import "utils/variables";
-
+@import "preloader";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,10 +14,8 @@ i {
   font-size: 40px;
 }
 
-
-
 //HEADER
-header{
+header, .wrap-loader{
   height: 100vh;
   color: $white;
   .container {

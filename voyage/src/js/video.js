@@ -1,3 +1,4 @@
+import preload from './preloader';
 window.onload=function () {
   const countOfSlides = document.querySelectorAll('.slide').length,
         currentNumber = document.querySelector('.current_number'),
@@ -17,25 +18,7 @@ window.onload=function () {
     currentNumber.innerText=`${--i}/${countOfSlides}`;
   };
 let scroll=0;
-  // header.onwheel=function(e){
-  //     scroll+=e.deltaY;
-  //     if (scroll>=600 && scroll<=800){
-  //       if (i<2){
-  //         down_angle.onclick();
-  //         document.querySelector('header>.container').style.position='static';
-  //       }
-  //       scroll=0;
-  //     } else if (scroll<=-300){
-  //       if (i>1) {
-  //         up_angle.onclick();
-  //         document.querySelector('header>.container').style.position='fixed';
-  //       }
-  //       scroll=0;
-  //     }
-  // }
-  //   };
   window.onscroll=function () {
-    //console.log(document.documentElement.scrollTop);
    if(document.documentElement.scrollTop>=300 && document.documentElement.scrollTop<=800){
      document.querySelector('header>.container').style.position='fixed';
      if (i<2) {
@@ -51,6 +34,7 @@ let scroll=0;
      document.querySelector('header>.container').style.position='static';
    }
   }
+  preload();
 };
 
 
