@@ -8,3 +8,5 @@ voyage/.idea/
 voyage/package-lock.json
 voyage/node_modules/
 cars/.idea
+cars/package-lock.json
+cars/node_modules

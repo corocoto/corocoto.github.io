@@ -3,7 +3,7 @@
 //1. COLORS
 $white: #fff;
 $green: #70C1B3;
-$yellow: #F3FFBD;
+$red: #FF1654;
 $blue: #247BA0;
 //2. FONTS
 $standard: 'Cinzel', sans-serif;
@@ -29,34 +29,58 @@ body{
     font-family: $header;
   }
 }
+.pagination{
+  position: fixed;
+  z-index: 100;
+  bottom: 50px;
+  left: 50px;
+  li{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $white;
+    &.is_active{
+      background: $red;
+    }
+  }
+}
 .section{
   position: absolute;
   top: 0;
   left: 0;
   height: 100vh;
   background: $green;
-  padding: 10vw;
+  //padding: 10px;
   &:nth-child(odd){
     background: $blue;
   }
   h2{
     font-family: $header;
     font-size: 70px;
-    margin-bottom: 1em;
-    position: relative;
-    span{
-      position: absolute;
-      left: -1em;
+    margin:{
+      //top: .5em;
+      bottom: 1em;
+      left: 20px;
     }
+    padding-top: 7vh;
+    position: relative;
+
   }
   .list{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 5em;
   }
   p{
     display: block;
-    width: 45%;
+    width: 40%;
     font-size: 20px;
     line-height: 1.6;
   }
@@ -65,7 +89,7 @@ body{
     justify-content: center;
   }
   .slide{
-    height: 60vh;
+    height: 45vh;
     box-shadow: 0px 13px 34px 2px rgba(0,0,0,0.75);
   }
 }
