@@ -1,0 +1,71 @@
+//VARIABLES
+
+//1. COLORS
+$white: #fff;
+$green: #70C1B3;
+$yellow: #F3FFBD;
+$blue: #247BA0;
+//2. FONTS
+$standard: 'Cinzel', sans-serif;
+$header: 'Orbitron', sans-serif;
+*{
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: $standard;
+  line-height: 1.4;
+  color: $white;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: #000;
+  font-weight: bold;
+  h1{
+    font-family: $header;
+  }
+}
+.section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: $green;
+  padding: 10vw;
+  &:nth-child(odd){
+    background: $blue;
+  }
+  h2{
+    font-family: $header;
+    font-size: 70px;
+    margin-bottom: 1em;
+    position: relative;
+    span{
+      position: absolute;
+      left: -1em;
+    }
+  }
+  .list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5em;
+  }
+  p{
+    display: block;
+    width: 45%;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+  }
+  .slide{
+    height: 60vh;
+    box-shadow: 0px 13px 34px 2px rgba(0,0,0,0.75);
+  }
+}
