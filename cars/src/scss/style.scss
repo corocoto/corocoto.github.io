@@ -17,6 +17,8 @@ body{
   font-family: $standard;
   line-height: 1.4;
   color: $white;
+  overflow: hidden;
+  height: 100vh;
 }
 .header{
   position: fixed;
