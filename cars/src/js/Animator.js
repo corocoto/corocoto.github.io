@@ -3,4 +3,7 @@ import PubSub from "pubsub-js";
 // PubSub.publish('goToSlide', {from:1, to:2});
 PubSub.subscribe('goToSlide', function (msg,data) {
     console.log(msg,data);
+    let sections = document.querySelectorAll('.section');
+    sections[data.from].classList.remove('is_active');
+    sections[data.to].classList.add('is_active');
 });

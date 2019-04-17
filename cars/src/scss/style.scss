@@ -57,9 +57,13 @@ body{
   left: 0;
   height: 100vh;
   background: $green;
+  opacity: 0;
   //padding: 10px;
   &:nth-child(odd){
     background: $blue;
+  }
+  &.is_active{
+    opacity: 1;
   }
   h2{
     font-family: $header;
