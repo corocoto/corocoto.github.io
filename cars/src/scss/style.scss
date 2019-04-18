@@ -31,9 +31,11 @@ body{
     font-family: $header;
   }
 }
-.pagination{
+.header, .pagination {
   position: fixed;
   z-index: 100;
+}
+.pagination{
   bottom: 50px;
   left: 50px;
   li{
