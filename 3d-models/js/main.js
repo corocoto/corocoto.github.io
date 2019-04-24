@@ -1,8 +1,9 @@
 const scene = new THREE.Scene(),
     camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000),
     renderer = new THREE.WebGLRenderer({antialias:true, alpha: true});
+let loader=new THREE.TextureLoader();
+loader.load('img/bg_prod.jpg' , (texture)=> scene.background = texture);
 
-renderer.setClearColor('#dddddd');
 renderer.setSize(window.innerWidth,window.innerHeight);
 document.body.appendChild(renderer.domElement);
 

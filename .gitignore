@@ -10,3 +10,4 @@ voyage/node_modules/
 cars/.idea
 cars/package-lock.json
 cars/node_modules
+.idea/
