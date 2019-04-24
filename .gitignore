@@ -1,4 +1,4 @@
-.idea
+.idea/
 #Ignore files and folders in "education" folder
 education/.idea/
 education/app/
@@ -8,6 +8,6 @@ company/.idea/
 voyage/.idea/
 voyage/package-lock.json
 voyage/node_modules/
-cars/.idea
+cars/.idea/
 cars/package-lock.json
 cars/node_modules
