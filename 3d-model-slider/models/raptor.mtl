@@ -1,0 +1,42 @@
+newmtl PM3D_Sphere3D_3_blinnSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd raptor_d.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd feather_d.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 18.00
+newmtl polySurface1_blinnSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd raptor_d.png
+bump raptor_n.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl raptor_body6_2_blinnSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd raptor_d.png
+bump raptor_n.png -bm 1
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl raptor_body7_1_blinnSG
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
