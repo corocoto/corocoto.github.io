@@ -38,8 +38,6 @@ header, .wrap-loader{
   position: relative;
   @include starterFlex(space-between, center);
   flex-direction: column;
-  //align-items: center;
-  //justify-content: space-between;
   i{
     cursor: pointer;
     transition: $transition_for_i;
